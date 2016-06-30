@@ -1,0 +1,28 @@
+{
+    "name": "zeindelf/badwords",
+    "description": "Filtro para censura de palavrões/palavras inapropriadas",
+    "support": {
+        "issues": "https://github.com/zeindelf/badwords/issues",
+        "source": "https://github.com/zeindelf/badwords"
+    },
+    "type": "library",
+    "keywords": ["badwords", "palavrão"],
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wellington Barreto",
+            "email": "zeindelf@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Badwords\\": "src/"
+        }
+    }
+}
