@@ -4,14 +4,7 @@ Filtro para censura de palavrões/palavras inapropriadas.
 
 ## Instalação
 
-Instale via composer:
-```
-{
-	"require": {
-	    "zeindelf/badwords": "1.*"
-	}
-}
-```
+Instale via composer: `$ composer require zeindelf/badwords`
 
 ## Uso
 
