@@ -43,37 +43,37 @@ class Badwords
 
 		$getFilter = Config::get('filter');
 
-		if ( !is_null($extra) ):
-			if ( array_key_exists('badwords', $extra) ):
+		if ( !is_null($extra) ) {
+			if ( array_key_exists('badwords', $extra) ) {
 				$getFilter = array_merge($extra['badwords'], $getFilter);
-			endif;
+			}
 
-			if ( array_key_exists('ignored', $extra) ):
-				for ( $i = 0; $i < count($extra['ignored']); $i++ ):
+			if ( array_key_exists('ignored', $extra) ) {
+				for ( $i = 0; $i < count($extra['ignored']); $i++ ) {
 					$extra['ignored'][$i] = static::doubleChars($extra['ignored'][$i]);
-				endfor;
+				}
 
-				for ( $i = 0; $i < count($getFilter); $i++ ):
-					foreach ( $extra['ignored'] as $ignored ):
-						if ( is_int(strripos($ignored, $getFilter[$i])) ):
+				for ( $i = 0; $i < count($getFilter); $i++ ) {
+					foreach ( $extra['ignored'] as $ignored ) {
+						if ( is_int(strripos($ignored, $getFilter[$i])) ) {
 							$arr[] = $i;
-						endif;
-					endforeach;
-				endfor;
+						}
+					}
+				}
 
-				if ( isset($arr) ):
-					foreach ( $arr as $a ):
+				if ( isset($arr) ) {
+					foreach ( $arr as $a ) {
 						unset($getFilter[$a]);
-					endforeach;
-				endif;
-			endif;
-		endif;
+					}
+				}
+			}
+		}
 
-		foreach ( $getFilter as $filter ):
-			if ( is_int(strripos($string, $filter)) ):
+		foreach ( $getFilter as $filter ) {
+			if ( is_int(strripos($string, $filter)) ) {
 				return true;
-			endif;
-		endforeach;
+			}
+		}
 
 		return false;
 	}
@@ -92,28 +92,28 @@ class Badwords
 		$letter[] = '!';
 		$qntChar = 5;
 
-		for ( $i = 0; $i < count($letter); $i++ ):
-			for ( $j = 0; $j < $qntChar; $j++ ):
+		for ( $i = 0; $i < count($letter); $i++ ) {
+			for ( $j = 0; $j < $qntChar; $j++ ) {
 				$repeat = str_repeat($letter[$i], $j);
 				$arrString = str_split($repeat);
-			endfor;
+			}
 
 			$arr[] = $arrString;
-		endfor;
+		}
 
-		for ( $i = 0; $i < count($arr); $i++ ):
-			for ( $j = 0; $j < count($arr[$i]); $j++ ):
+		for ( $i = 0; $i < count($arr); $i++ ) {
+			for ( $j = 0; $j < count($arr[$i]); $j++ ) {
 				$newRepeat[] = str_repeat($arr[$i][$j], $j + 1);
-			endfor;
-		endfor;
+			}
+		}
 
 		$doubleChar = array_chunk($newRepeat, $qntChar - 1);
 
-		for ( $i = 0; $i < count($doubleChar); $i++ ):
-			for ( $j = 1; $j <= 5; $j++ ):
+		for ( $i = 0; $i < count($doubleChar); $i++ ) {
+			for ( $j = 1; $j <= 5; $j++ ) {
 				$string = str_replace($doubleChar[$i], $letter[$i], $string);
-			endfor;
-		endfor;
+			}
+		}
 
 		return $string;
 	}
@@ -125,7 +125,7 @@ class Badwords
 	 * @param bool 		$lower 		Retorna em lowercase caso true
 	 * @return string
 	 */
-	public static function unreadableString($string)
+	protected static function unreadableString($string)
 	{
 		$arrString['special'] = 'ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜüÝÞß@àáâãäåæç&èéêëìíîïðñòóôõöøùúûýýþÿ$°ºª';
 		$arrString['number']  = '0123456789';

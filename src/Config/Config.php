@@ -51,20 +51,20 @@ class Config
      */
     public static function get($key)
     {
-        if ( self::exists($key) ):
+        if ( self::exists($key) ) {
             $key = explode('.', $key);
             $array = self::$arr[$key[0]];
             unset($key[0]);
 
-            foreach ( $key as $k ):
+            foreach ( $key as $k ) {
                 $array = $array[$k];
-            endforeach;
+            }
 
             return $array;
-        else:
+        } else {
             echo '<b>N&atilde;o existe o &iacute;ndice informado no array.</b>';
             return false;
-        endif;
+        }
     }
 
     /**
@@ -81,18 +81,18 @@ class Config
         $array = self::$arr[$key[0]];
         unset($key[0]);
 
-        foreach ( $key as $k ):
-            if ( is_array(self::$arr) ):
+        foreach ( $key as $k ) {
+            if ( is_array(self::$arr) ) {
                 $array = $array[$k];
-            else:
+            } else {
                 return false;
-            endif;
-        endforeach;
+            }
+        }
 
-        if ( !is_null($array) ):
+        if ( !is_null($array) ) {
             return true;
-        else:
+        } else {
             return false;
-        endif;
+        }
     }
 }

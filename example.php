@@ -11,13 +11,13 @@ function flash($class, $message) {
 
 $word = filter_input(INPUT_POST, 'word', FILTER_DEFAULT);
 
-if ( !is_null($word) ):
-	if ( Badwords\Badwords::verify($word) ):
+if ( !is_null($word) ){
+	if ( Badwords\Badwords::verify($word) ){
 		flash('danger', 'Palavra inapropriada');
-	else:
+	} else {
 		flash('success', 'Palavra apropriada');
-	endif;
-endif;
+	}
+}
 ?>
 
 <!DOCTYPE html>
@@ -49,10 +49,10 @@ endif;
 			<div class="form-container">
 
 				<?php
-					if ( isset($_SESSION['flash']) ):
+					if ( isset($_SESSION['flash']) ){
 						echo $_SESSION['flash'];
 						unset($_SESSION['flash']);
-					endif;
+					}
 				?>
 
 				<form action="" method="post">
