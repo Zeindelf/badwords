@@ -118,6 +118,10 @@ class Badwords
 		return $string;
 	}
 
+	//------------------------------------------------------------
+    //  PROTECTED METHODS
+    //------------------------------------------------------------
+
 	/**
 	 * Converte caracteres especiais e números em letras associadas
 	 *

@@ -11,7 +11,7 @@ Instale via composer: `$ composer require zeindelf/badwords`
 ### Verificação simples
 
 ```php
-$verify = Badwords\Badwords::verify(/* sua palavra a ser verificada */);
+$verify = \Badwords\Badwords::verify(/* sua palavra a ser verificada */);
 
 if ( $verify ) {
 	echo 'Badwords!';
@@ -27,7 +27,7 @@ $extra = [
 	'badwords' => ['rocks'],
 ];
 
-$verify = Badwords\Badwords::verify('rocks', $extra);
+$verify = \Badwords\Badwords::verify('rocks', $extra);
 
 if ( $verify ) {
 	echo 'Badwords!';
@@ -47,7 +47,7 @@ $extra = [
 	'ignored' => ['cadela'],
 ];
 
-$verify = Badwords\Badwords::verify('cadela', $extra);
+$verify = \Badwords\Badwords::verify('cadela', $extra);
 
 if ( ! $verify ) {
 	echo 'Cadela é uma palavra válida';
