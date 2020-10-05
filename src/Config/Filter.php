@@ -9,28 +9,38 @@ Config::set('filter', [
 	//------------------------------------------------------------
 	// Português
 	//------------------------------------------------------------
+	'acefal'
 	'anal',
 	'ana!',
+	'ant'
 	'anus',
 	'arombad',
 
+	'baba-ovo'
 	'babaca',
+	'babaq',
+	'babaovo',
 	'bacanal',
 	'bacana!',
 	'bacura',
 	'bagos',
-	'baitola',
-	'ba!tola',
-	'baito!a',
-	'ba!to!a',
+	'baitol',
+	'ba!tol',
+	'baito!',
+	'ba!to!',
 	'bct',
+	'bebum'
 	'bicha',
+	'bichinha',
 	'bisca',
 	'bixa',
+	'bixinha',
 	'boazuda',
 	'bocet',
 	'boiola',
+	'boiolinha',
 	'bo!ola',
+	'bo!olinha',
 	'bolagto',
 	'bo!agto',
 	'boquet',
@@ -45,8 +55,11 @@ Config::set('filter', [
 	'bucet',
 	'bunda',
 	'bunduda',
+	'bur'
+	'burinh'
 	'buset',
 
+	'cachora',
 	'cadel',
 	'cade!',
 	'cacet',
@@ -59,6 +72,8 @@ Config::set('filter', [
 	'cara!h',
 	'caseta',
 	'casete',
+	'caseto',
+	'casetu',
 	'chana',
 	'chaninh',
 	'chavasc',
@@ -88,7 +103,8 @@ Config::set('filter', [
 	'chota',
 	'chotinh',
 	'chot!nh',
-	'chupad',
+	'chupa',
+	'chupe',
 	'clitoris',
 	'cl!toris',
 	'clitor!s',
@@ -101,6 +117,8 @@ Config::set('filter', [
 	'crl',
 	'cretin',
 	'cret!n',
+	'cruzcredo'
+	'cruz-credo'
 	'cusa',
 	'cusinho',
 	'cus!nho',
@@ -112,6 +130,15 @@ Config::set('filter', [
 	'cuz!nho',
 	'cuzud',
 
+	'debil',
+	'debei',
+	'demonio',
+	'diabo',
+	'diabinh',
+	'dick',
+	'doid',
+	'doidinh',
+			
 	'egua',
 	'escrot',
 	'esporad',
@@ -119,6 +146,12 @@ Config::set('filter', [
 	'estup!d',
 
 	'fdp',
+	'fedid',
+	'fedor',
+	'feia',
+	'feio',
+	'feinh',
+	'fdm'
 	'foda',
 	'fode',
 	'fodid',
@@ -128,6 +161,7 @@ Config::set('filter', [
 	'fodona',
 	'fornica',
 	'forn!ca',
+	'fuck',
 	'fude',
 	'fudendo',
 	'fudecao',
@@ -136,6 +170,7 @@ Config::set('filter', [
 	'furnica',
 	'furn!ca',
 
+	'gay',
 	'gonore',
 	'gosma',
 	'gosment',
@@ -145,6 +180,7 @@ Config::set('filter', [
 	'grelo',
 	'goza',
 	'gozo',
+	'gozinh',
 
 	'idiota',
 	'!diota',
@@ -212,28 +248,33 @@ Config::set('filter', [
 	'!esbica',
 	'lesb!ca',
 	'!esb!ca',
-	'lolit',
-	'!olit',
-	'lo!it',
-	'lol!t',
-	'!o!it',
-	'!ol!t',
+	'loli',
+	'!oli',
+	'lo!i',
+	'lol!',
+	'!o!i',
+	'!ol!',
 
 	'macac',
 	'machona',
 	'machora',
 	'manguaca',
 	'masturba',
+	'melec',
 	'merda',
 	'merdinha',
 	'mija',
 	'm!ja',
+	'mije',
+	'm!je',
 	'mijo',
 	'm!jo',
+	'mocorong',
 	'mocrea',
 	'mocreia',
 	'mocre!a',
 	'mondrong',
+	'mongol',
 
 	'nadega',
 	'nazi',
@@ -250,9 +291,22 @@ Config::set('filter', [
 	'otari',
 	'otar!',
 
+	'paca',
 	'paspalh',
 	'pauzao',
 	'pauzaum',
+	'pauzinho',
+	'pauz!nho',
+	'peida'
+	'pe!da'
+	'peide'
+	'pe!de'
+	'peidi'
+	'peid!'
+	'pe!di'
+	'pe!d!'
+	'peido'
+	'pe!do'
 	'pemba',
 	'penian',
 	'pen!an',
@@ -262,10 +316,13 @@ Config::set('filter', [
 	'pente!h',
 	'pepeca',
 	'pepeka',
+	'pepeq',
 	'pererec',
 	'pererek',
+	'perereq',
 	'peroc',
 	'perok',
+	'peroq',
 	'peru',
 	'pintudo',
 	'p!ntudo',
@@ -275,6 +332,10 @@ Config::set('filter', [
 	'p!ntaum',
 	'pintaso',
 	'p!ntaso',
+	'pintinh',
+	'p!ntinh',
+	'pint!nh',
+	'p!nt!nh',
 	'piranha',
 	'p!ranha',
 	'piriguet',
@@ -285,9 +346,13 @@ Config::set('filter', [
 	'p!roc',
 	'pirok',
 	'p!rok',
+	'piroq',
+	'p!roq',
 	'pora',
+	'porinh',
 	'porno',
 	'ppk',
+	'ppquinh',
 	'pqp',
 	'prostibulo',
 	'prost!bulo',
@@ -299,10 +364,13 @@ Config::set('filter', [
 	'pupunha',
 	'pustula',
 	'pustu!a',
+	'pusy',
 	'puta',
 	'putinh',
 	'put!nh',
 	'puto',
+	'puxasaco',
+	'puxa-saco',
 
 	'rabao',
 	'rabaum',
@@ -310,14 +378,20 @@ Config::set('filter', [
 	'rabud',
 	'racha',
 	'retardad',
+	'ridicul'
+	'rid!cul'
+	'r!dicul'
+	'r!d!cul'
 	'rola',
 	'ro!a',
 	'rolinha',
 	'ro!inha',
 	'rol!nha',
+	'rolud',
 	'rosca',
 
 	'sacana',
+	'safad',
 	'sapata',
 	'sapataum',
 	'sifili',
@@ -359,6 +433,8 @@ Config::set('filter', [
 	'vaca',
 	'vadia',
 	'vad!a',
+	'vadio',
+	'vad!o',
 	'vagabund',
 	'vagina',
 	'vag!na',
@@ -367,6 +443,11 @@ Config::set('filter', [
 	'v!ad',
 	'vibrador',
 	'v!brador',
+	'vsf',
+	'vtnc',
+	'verme',
+	'verminoid',
+	'vomit',
 
 	'xavasc',
 	'xavask',
@@ -398,5 +479,7 @@ Config::set('filter', [
 	'xana',
 	'xaninh',
 	'xan!nh',
-	'xupad',
+	'xupa',
+	'xupe',
+	'xupo',
 ]);
